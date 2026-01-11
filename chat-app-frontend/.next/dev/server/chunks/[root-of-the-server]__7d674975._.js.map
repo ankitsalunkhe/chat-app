@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 40, "column": 0}, "map": {"version":3,"sources":["file:///Users/ankitsanjaysalunkhe/work/pratice-fullstack/chat-app/src/app/api/logout/route.ts"],"sourcesContent":["export async function POST(_request: Request) {\n  console.log(\"temp\")\n  const response = await fetch(\"http://localhost:1323/v1/auth/logout\", {\n    method: \"POST\",\n  });\n\n  return response;\n}\n"],"names":[],"mappings":";;;;AAAO,eAAe,KAAK,QAAiB;IAC1C,QAAQ,GAAG,CAAC;IACZ,MAAM,WAAW,MAAM,MAAM,wCAAwC;QACnE,QAAQ;IACV;IAEA,OAAO;AACT"}}]
+}

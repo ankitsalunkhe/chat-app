@@ -1,0 +1,226 @@
+openapi: 3.0.0
+info:
+  title: Chat App Backend
+  version: 1.0.0
+  description: An API to access backend for chat app
+  contact:
+    name: Ankit Salunkhe
+    email: anksalunkhe987@gmail.com
+servers:
+  - url: http://localhost:8080/api/v1
+    description: Local
+
+paths:
+  /health:
+    get:
+      summary: Health
+      operationId: getHealth
+      responses:
+        '200':
+          description: health response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Health'
+
+  /v1/auth/login:
+    post:
+      summary: Login
+      operationId: postLogin
+      requestBody:
+        description: Login
+        content:
+          application/x-www-form-urlencoded: 
+            schema: 
+              $ref: '#/components/schemas/loginRequest'
+          
+      responses:
+          '200':
+            description: Login Handler
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/loginResponse'
+          
+          '400':
+            description: Bad request
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/errorResponse'
+          
+          '401':
+            description: Unauthorized
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/errorResponse'
+
+  /v1/auth/register:
+    post:
+      summary: Register
+      operationId: postRegister
+      requestBody:
+        description: Register data
+        content:
+          application/x-www-form-urlencoded: 
+            schema: 
+              $ref: '#/components/schemas/registerRequest'
+          
+      responses:
+          '200':
+            description: Login Handler
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/registerResponse'
+          
+          '400':
+            description: Bad request
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/errorResponse'
+
+  /v1/auth/verify:
+    post:
+      operationId: postVerify
+      security:
+        - cookieAuth: []
+      responses:
+        '200':
+          description: Session is valid
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/verifyAuthResponse'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/unauthorizedResponse'
+                
+  /v1/auth/logout:
+    post:
+      summary: Logout
+      operationId: postLogout
+      security:
+        - cookieAuth: []
+      responses:
+        '200':
+          description: Logged out successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/logoutResponse' 
+      
+components:
+  securitySchemes:
+    cookieAuth:
+      type: apiKey
+      in: cookie
+      name: chat_app_session
+      description: Session token stored in HttpOnly cookie
+
+  schemas:
+    Health:
+      type: object
+      properties:
+        message:
+          type: string
+      
+    loginResponse:
+      type: object
+      properties:
+        access_token:
+          type: string
+        token_type:
+          type: string
+        expires_in:
+          type: integer
+      required:
+        - access_token
+        - token_type
+        - expires_in
+
+    verifyAuthResponse:
+      type: object
+      properties:
+        userId:
+          type: integer
+
+    errorResponse:
+      type: object
+      properties:
+        error:
+          type: string
+          enum:
+            - invalid_request
+            - invalid_client
+            - unsupported_grant_type
+        error_description:
+          type: string
+      required:
+        - error
+
+    loginRequest:
+      type: object
+      properties:
+        grant_type:
+          type: string
+          enum:
+            - password
+          x-oapi-codegen-extra-tags: 
+            validate: "oneof=password"
+            form: "grant_type"
+        username: 
+          type: string
+          x-oapi-codegen-extra-tags: 
+            validate: "required"
+            form: "username"
+        password:
+          type: string
+          x-oapi-codegen-extra-tags: 
+            validate: "required"
+            form: "password"
+      required:
+        - grant_type
+        - username
+        - password
+    
+    logoutResponse:
+      type: object
+      properties:
+        message:
+          type: string
+
+    registerRequest:
+      type: object
+      properties:
+        username: 
+          type: string
+          x-oapi-codegen-extra-tags: 
+            validate: "required"
+            form: "username"
+        password:
+          type: string
+          x-oapi-codegen-extra-tags: 
+            validate: "required"
+            form: "password"
+            
+      required:
+        - username
+        - password
+
+    registerResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+
+    unauthorizedResponse:
+      type: object
+      properties:
+        error:
+          type: string

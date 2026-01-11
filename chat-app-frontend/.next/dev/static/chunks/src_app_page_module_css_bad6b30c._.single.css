@@ -1,0 +1,129 @@
+/* [project]/src/app/page.module.css [app-client] (css) */
+.page-module___8aEwW__loginContainer {
+  background-color: #69cced;
+  border-radius: 25px;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  row-gap: 2rem;
+  width: 500px;
+  padding: 40px;
+  display: flex;
+  box-shadow: 2px 5px 10px gray;
+}
+
+.page-module___8aEwW__loginTitle {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.page-module___8aEwW__form {
+  flex-direction: column;
+  row-gap: 8px;
+  width: 100%;
+  display: flex;
+}
+
+.page-module___8aEwW__usernameContainer {
+  display: flex;
+  position: relative;
+}
+
+.page-module___8aEwW__username {
+  border-color: none;
+  border: 1px solid #f7f5f5;
+  border-radius: 10px;
+  width: 100%;
+  font-size: 18px;
+}
+
+.page-module___8aEwW__usernameLogo {
+  z-index: 10;
+  padding-left: 2%;
+  position: absolute;
+  top: 20%;
+}
+
+.page-module___8aEwW__username::placeholder {
+  opacity: .5;
+}
+
+.page-module___8aEwW__username[type="text"] {
+  padding: 12px 10%;
+}
+
+.page-module___8aEwW__usernameErrCont {
+  position: absolute;
+  top: 80%;
+}
+
+.page-module___8aEwW__usernameError {
+  color: red;
+  font-size: small;
+}
+
+.page-module___8aEwW__passwordContainer {
+  margin-top: 15px;
+  display: flex;
+  position: relative;
+}
+
+.page-module___8aEwW__password {
+  border-color: none;
+  border: 1px solid #f7f5f5;
+  border-radius: 10px;
+  width: 100%;
+  font-size: 18px;
+}
+
+.page-module___8aEwW__passwordLogo {
+  z-index: 10;
+  padding-left: 2%;
+  position: absolute;
+  top: 20%;
+}
+
+.page-module___8aEwW__password[type="password"] {
+  padding: 12px 10%;
+}
+
+.page-module___8aEwW__password::placeholder {
+  opacity: .5;
+}
+
+.page-module___8aEwW__loginButton {
+  color: #fff;
+  cursor: pointer;
+  background-color: #000;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.page-module___8aEwW__externalLogin {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.page-module___8aEwW__externalSignTitle {
+  font-size: large;
+}
+
+.page-module___8aEwW__googleLogin {
+  cursor: pointer;
+}
+
+.page-module___8aEwW__forgotPassCont {
+  margin-left: auto;
+  display: flex;
+}
+
+.page-module___8aEwW__forgotPassBtn {
+  cursor: pointer;
+  color: #2266ef;
+  background-color: #0000;
+  border: none;
+}
+
+/*# sourceMappingURL=src_app_page_module_css_bad6b30c._.single.css.map*/

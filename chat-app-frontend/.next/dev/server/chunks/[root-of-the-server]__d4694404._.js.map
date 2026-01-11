@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 40, "column": 0}, "map": {"version":3,"sources":["file:///Users/ankitsanjaysalunkhe/work/pratice-fullstack/chat-app/src/app/api/login/route.tsx"],"sourcesContent":["export async function POST(request: Request) {\n  const formData = await request.formData();\n\n  formData.append(\"grant_type\", \"password\");\n\n  const response = await fetch(\"http://localhost:1323/v1/auth/login\", {\n    method: \"POST\",\n    body: formData,\n  });\n\n  return response;\n}\n"],"names":[],"mappings":";;;;AAAO,eAAe,KAAK,OAAgB;IACzC,MAAM,WAAW,MAAM,QAAQ,QAAQ;IAEvC,SAAS,MAAM,CAAC,cAAc;IAE9B,MAAM,WAAW,MAAM,MAAM,uCAAuC;QAClE,QAAQ;QACR,MAAM;IACR;IAEA,OAAO;AACT"}}]
+}

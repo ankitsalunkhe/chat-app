@@ -1,0 +1,27 @@
+.home {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-areas:
+    "header header header header"
+    "sidebar main main main";
+
+  justify-items: center;
+}
+
+.header {
+  border-color: blue;
+  border-radius: 25px;
+  grid-area: header;
+  width: 100%;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  height: 500px;
+  width: 100%;
+  background-color: rgb(59, 130, 174);
+}
+
+.main {
+  grid-area: main;
+}

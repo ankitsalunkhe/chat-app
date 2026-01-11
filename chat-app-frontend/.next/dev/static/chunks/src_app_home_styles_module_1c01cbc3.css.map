@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///Users/ankitsanjaysalunkhe/work/pratice-fullstack/chat-app/src/app/home/styles.module.css"],"sourcesContent":[".logout {\n  font-size: larger;\n  padding: 10px 20px;\n  border-radius: 5px;\n  cursor: pointer;\n  background-color: black;\n  color: white;\n  box-shadow: 1px 2px 2px black;\n}\n\n.logout:hover {\n  color: grey;\n}\n"],"names":[],"mappings":"AAAA;;;;;;;;;;AAUA"}}]
+}

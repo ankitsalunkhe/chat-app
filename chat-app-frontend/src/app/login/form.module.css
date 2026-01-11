@@ -1,0 +1,100 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 8px;
+}
+
+.usernameContainer {
+  display: flex;
+  position: relative;
+}
+
+.username {
+  border-radius: 10px;
+  border-color: none;
+
+  border: 1px solid rgb(247, 245, 245);
+  width: 100%;
+  font-size: 18px;
+}
+
+.usernameLogo {
+  position: absolute;
+  z-index: 10;
+  top: 20%;
+  padding-left: 2%;
+}
+
+.username::placeholder {
+  opacity: 0.5;
+}
+
+.username[type="text"] {
+  padding: 12px 10%;
+}
+
+.errorContainer {
+  position: absolute;
+  top: 80%;
+}
+
+.errorMsg {
+  font-size: small;
+  color: red;
+}
+
+.passwordContainer {
+  display: flex;
+  position: relative;
+  margin-top: 15px;
+}
+
+.password {
+  border-radius: 10px;
+  border-color: none;
+  border: 1px solid rgb(247, 245, 245);
+  width: 100%;
+  font-size: 18px;
+}
+
+.passwordLogo {
+  position: absolute;
+  z-index: 10;
+  top: 20%;
+  padding-left: 2%;
+}
+
+.password[type="password"] {
+  padding: 12px 10%;
+}
+
+.password::placeholder {
+  opacity: 0.5;
+}
+
+.loginButton {
+  color: white;
+  background-color: black;
+  border-radius: 15px;
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.loggingBtn{
+  color: grey;
+}
+
+.forgotPassCont {
+  display: flex;
+  margin-top: 10px;
+  margin-left: auto;
+}
+
+.forgotPassBtn {
+  cursor: pointer;
+  background-color: Transparent;
+  border: none;
+  color: rgb(34, 102, 239);
+}

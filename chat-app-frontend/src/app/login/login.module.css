@@ -1,0 +1,141 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginContainer {
+  background-color: rgb(105, 204, 237);
+  padding: 40px;
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 25px;
+  box-shadow: 2px 5px 10px grey;
+  width: 500px;
+
+  row-gap: 2rem;
+}
+
+.loginTitle {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 8px;
+}
+
+.usernameContainer {
+  display: flex;
+  position: relative;
+}
+
+.username {
+  border-radius: 10px;
+  border-color: none;
+
+  border: 1px solid rgb(247, 245, 245);
+  width: 100%;
+  font-size: 18px;
+}
+
+.usernameLogo {
+  position: absolute;
+  z-index: 10;
+  top: 20%;
+  padding-left: 2%;
+}
+
+.username::placeholder {
+  opacity: 0.5;
+}
+
+.username[type="text"] {
+  padding: 12px 10%;
+}
+
+.usernameErrCont {
+  position: absolute;
+  top: 80%;
+}
+
+.usernameError {
+  font-size: small;
+  color: red;
+}
+
+.passwordContainer {
+  display: flex;
+  position: relative;
+  margin-top: 15px;
+}
+
+.password {
+  border-radius: 10px;
+  border-color: none;
+  border: 1px solid rgb(247, 245, 245);
+  width: 100%;
+  font-size: 18px;
+}
+
+.passwordLogo {
+  position: absolute;
+  z-index: 10;
+  top: 20%;
+  padding-left: 2%;
+}
+
+.password[type="password"] {
+  padding: 12px 10%;
+}
+
+.password::placeholder {
+  opacity: 0.5;
+}
+
+.loginButton {
+  color: white;
+  background-color: black;
+  border-radius: 15px;
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.loginButton:hover {
+  color: grey;
+}
+
+.externalLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.externalSignTitle {
+  font-size: large;
+}
+
+
+.googleLogin {
+  cursor: pointer;
+}
+
+.forgotPassCont {
+  display: flex;
+  margin-left: auto;
+}
+
+.forgotPassBtn {
+  cursor: pointer;
+  background-color: Transparent;
+  border: none;
+  color: rgb(34, 102, 239);
+}

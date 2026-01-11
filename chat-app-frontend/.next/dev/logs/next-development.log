@@ -1,0 +1,424 @@
+[00:00:00.907] Server  WARN    ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:01.019] Server  LOG     ✓ Ready in 805ms
+[00:03:03.561] Browser LOG     "2026-01-11T20:31:26.980Z"
+[00:07:05.143] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./node_modules/.pnpm/next@16.1.1_@babel+core@7.28.5_babel-plugin-react-compiler@1.0.0_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:07:11.488] Server  LOG     ✓ Compiled in 1ms
+[00:07:11.585] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./node_modules/.pnpm/next@16.1.1_@babel+core@7.28.5_babel-plugin-react-compiler@1.0.0_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:07:11.660] Server  LOG     ✓ Compiled in 0ms
+[00:37:14.378] Server  LOG     ✓ Compiled in 23ms
+[00:38:07.284] Server  LOG     ✓ Compiled in 178ms
+[00:38:39.693] Server  LOG     ✓ Compiled in 3ms
+[00:39:05.390] Server  LOG     ✓ Compiled in 1ms
+[00:39:44.205] Server  LOG     ✓ Compiled in 5ms
+[00:39:46.378] Server  LOG     {
+  cookies: ResponseCookies {},
+  url: '',
+  body: null,
+  bodyUsed: false,
+  headers: { x-middleware-next: '1', x-user-id: '1' },
+  ok: true,
+  redirected: false,
+  status: 200,
+  statusText: '',
+  type: 'default'
+}
+[00:39:46.421] Server  LOG     {
+  cookies: ResponseCookies {},
+  url: '',
+  body: null,
+  bodyUsed: false,
+  headers: { x-middleware-next: '1', x-user-id: '1' },
+  ok: true,
+  redirected: false,
+  status: 200,
+  statusText: '',
+  type: 'default'
+}
+[00:39:52.687] Server  LOG     {
+  cookies: ResponseCookies {},
+  url: '',
+  body: null,
+  bodyUsed: false,
+  headers: { x-middleware-next: '1', x-user-id: '1' },
+  ok: true,
+  redirected: false,
+  status: 200,
+  statusText: '',
+  type: 'default'
+}
+[00:41:16.028] Server  LOG     ✓ Compiled in 3ms
+[00:41:28.445] Server  LOG     ✓ Compiled in 8ms
+[00:42:13.466] Server  LOG     ✓ Compiled in 242ms
+[00:42:13.812] Server  ERROR   ⨯ Error: The default export is not a React Component in "/home/layout"
+[00:42:13.958] Server  ERROR   ⨯ Error: The default export is not a React Component in "/home/layout"
+[00:42:14.386] Server  ERROR   ⨯ Error: The default export is not a React Component in "/home/layout"
+[00:42:14.532] Server  ERROR   ⨯ Error: The default export is not a React Component in "/home/layout"
+[00:42:14.734] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/home/layout"
+[00:42:47.086] Server  ERROR   ⨯ ReferenceError: NavBar is not defined
+[00:42:47.271] Browser ERROR   uncaughtError: ReferenceError: NavBar is not defined
+[00:45:07.638] Server  ERROR   ⨯ ./src/app/globals.css:4:22
+Module not found: Can't resolve 'background.jpg'
+  2 |   padding: 100px;
+  3 |   background-image: url("background.jpg");
+> 4 |
+    | ^
+  5 |   display: grid;
+  6 |   grid-gap: 5px;
+  7 |   grid-template-areas:
+
+
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:07.638] Server  ERROR   ⨯ ./src/app/globals.css:4:22
+Module not found: Can't resolve 'background.jpg'
+  2 |   padding: 100px;
+  3 |   background-image: url("background.jpg");
+> 4 |
+    | ^
+  5 |   display: grid;
+  6 |   grid-gap: 5px;
+  7 |   grid-template-areas:
+
+
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:07.641] Server  ERROR   ⨯ ./src/app/globals.css:4:22
+Module not found: Can't resolve 'background.jpg'
+  2 |   padding: 100px;
+  3 |   background-image: url("background.jpg");
+> 4 |
+    | ^
+  5 |   display: grid;
+  6 |   grid-gap: 5px;
+  7 |   grid-template-areas:
+
+
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:07.642] Server  ERROR   ⨯ ./src/app/globals.css:4:22
+Module not found: Can't resolve 'background.jpg'
+  2 |   padding: 100px;
+  3 |   background-image: url("background.jpg");
+> 4 |
+    | ^
+  5 |   display: grid;
+  6 |   grid-gap: 5px;
+  7 |   grid-template-areas:
+
+
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:07.643] Server  ERROR   ⨯ ./src/app/globals.css:4:22
+Module not found: Can't resolve 'background.jpg'
+  2 |   padding: 100px;
+  3 |   background-image: url("background.jpg");
+> 4 |
+    | ^
+  5 |   display: grid;
+  6 |   grid-gap: 5px;
+  7 |   grid-template-areas:
+
+
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:07.644] Server  ERROR   ⨯ ./src/app/globals.css:4:22
+Module not found: Can't resolve 'background.jpg'
+  2 |   padding: 100px;
+  3 |   background-image: url("background.jpg");
+> 4 |
+    | ^
+  5 |   display: grid;
+  6 |   grid-gap: 5px;
+  7 |   grid-template-areas:
+
+
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:07.644] Server  ERROR   ⨯ ./src/app/globals.css:4:22
+Module not found: Can't resolve 'background.jpg'
+  2 |   padding: 100px;
+  3 |   background-image: url("background.jpg");
+> 4 |
+    | ^
+  5 |   display: grid;
+  6 |   grid-gap: 5px;
+  7 |   grid-template-areas:
+
+
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:07.645] Server  ERROR   ⨯ ./src/app/globals.css:4:22
+Module not found: Can't resolve 'background.jpg'
+  2 |   padding: 100px;
+  3 |   background-image: url("background.jpg");
+> 4 |
+    | ^
+  5 |   display: grid;
+  6 |   grid-gap: 5px;
+  7 |   grid-template-areas:
+
+
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:07.647] Server  ERROR   ⨯ ./src/app/globals.css:4:22
+Module not found: Can't resolve 'background.jpg'
+  2 |   padding: 100px;
+  3 |   background-image: url("background.jpg");
+> 4 |
+    | ^
+  5 |   display: grid;
+  6 |   grid-gap: 5px;
+  7 |   grid-template-areas:
+
+
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:07.678] Server  LOG     ✓ Compiled in 56ms
+[00:45:07.780] Browser ERROR   ./src/app/globals.css:4:22
+Module not found: Can't resolve 'background.jpg'
+  2 |   padding: 100px;
+  3 |   background-image: url("background.jpg");
+> 4 |
+    | ^
+  5 |   display: grid;
+  6 |   grid-gap: 5px;
+  7 |   grid-template-areas:
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:45:46.372] Server  ERROR   ⨯ ./src/app/globals.css:4:22
+Module not found: Can't resolve 'background.jpg'
+  2 |   padding: 100px;
+  3 |   background-image: url("background.jpg");
+> 4 |
+    | ^
+  5 |   display: grid;
+  6 |   grid-gap: 5px;
+  7 |   grid-template-areas:
+
+
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:46.559] Browser ERROR   uncaughtError: Error: ./src/app/globals.css:4:22
+Module not found: Can't resolve 'background.jpg'
+  2 |   padding: 100px;
+  3 |   background-image: url("background.jpg");
+> 4 |
+    | ^
+  5 |   display: grid;
+  6 |   grid-gap: 5px;
+  7 |   grid-template-areas:
+
+
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:45:46.695] Browser ERROR   ./src/app/globals.css:4:22
+Module not found: Can't resolve 'background.jpg'
+  2 |   padding: 100px;
+  3 |   background-image: url("background.jpg");
+> 4 |
+    | ^
+  5 |   display: grid;
+  6 |   grid-gap: 5px;
+  7 |   grid-template-areas:
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:45:46.695] Browser ERROR   ./src/app/globals.css:4:22
+Module not found: Can't resolve 'background.jpg'
+  2 |   padding: 100px;
+  3 |   background-image: url("background.jpg");
+> 4 |
+    | ^
+  5 |   display: grid;
+  6 |   grid-gap: 5px;
+  7 |   grid-template-areas:
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:45:46.695] Browser ERROR   ./src/app/globals.css:4:22
+Module not found: Can't resolve 'background.jpg'
+  2 |   padding: 100px;
+  3 |   background-image: url("background.jpg");
+> 4 |
+    | ^
+  5 |   display: grid;
+  6 |   grid-gap: 5px;
+  7 |   grid-template-areas:
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:45:46.695] Browser ERROR   ./src/app/globals.css:4:22
+Module not found: Can't resolve 'background.jpg'
+  2 |   padding: 100px;
+  3 |   background-image: url("background.jpg");
+> 4 |
+    | ^
+  5 |   display: grid;
+  6 |   grid-gap: 5px;
+  7 |   grid-template-areas:
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:45:46.695] Browser ERROR   ./src/app/globals.css:4:22
+Module not found: Can't resolve 'background.jpg'
+  2 |   padding: 100px;
+  3 |   background-image: url("background.jpg");
+> 4 |
+    | ^
+  5 |   display: grid;
+  6 |   grid-gap: 5px;
+  7 |   grid-template-areas:
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:46:35.908] Server  LOG     ✓ Compiled in 13ms
+[00:47:39.009] Server  LOG     ✓ Compiled in 15ms
+[00:51:38.538] Server  LOG     ✓ Compiled in 4ms
+[00:51:47.293] Server  LOG     ✓ Compiled in 4ms
+[01:09:01.673] Server  LOG     ✓ Compiled in 3ms
+[01:09:13.359] Server  LOG     ✓ Compiled in 6ms
+[01:09:32.291] Server  LOG     ✓ Compiled in 4ms
+[01:10:24.961] Server  LOG     ✓ Compiled in 4ms
+[01:11:02.319] Server  LOG     ✓ Compiled in 14ms
+[01:11:18.540] Server  LOG     ✓ Compiled in 14ms
+[01:11:26.517] Server  LOG     ✓ Compiled in 14ms
+[01:11:32.344] Server  LOG     ✓ Compiled in 5ms
+[01:11:39.742] Server  LOG     ✓ Compiled in 4ms
+[01:12:53.739] Server  LOG     ✓ Compiled in 6ms
+[01:15:37.744] Server  LOG     ✓ Compiled in 3ms
+[01:15:41.428] Server  LOG     ✓ Compiled in 7ms
+[01:15:46.550] Server  LOG     ✓ Compiled in 3ms
+[01:16:27.117] Server  LOG     ✓ Compiled in 4ms
+[01:16:36.952] Server  LOG     ✓ Compiled in 6ms
+[01:16:42.493] Server  LOG     ✓ Compiled in 13ms
+[01:18:15.621] Server  LOG     ✓ Compiled in 7ms
+[01:18:23.297] Server  LOG     ✓ Compiled in 4ms
+[01:23:44.274] Server  LOG     ✓ Compiled in 4ms
+[01:23:54.083] Server  LOG     ✓ Compiled in 6ms
+[01:24:02.206] Server  LOG     ✓ Compiled in 5ms
+[01:24:18.163] Server  LOG     ✓ Compiled in 5ms
+[01:25:03.236] Server  LOG     ✓ Compiled in 1ms
+[01:25:08.062] Server  LOG     ✓ Compiled in 4ms
+[01:25:11.419] Server  LOG     ✓ Compiled in 3ms
+[01:25:22.002] Server  LOG     ✓ Compiled in 6ms
+[01:25:30.573] Server  LOG     ✓ Compiled in 5ms
+[01:26:06.494] Server  LOG     ✓ Compiled in 3ms
+[01:28:11.771] Server  LOG     ✓ Compiled in 2ms
+[01:28:27.726] Server  LOG     ✓ Compiled in 11ms
+[01:32:20.792] Server  LOG     ✓ Compiled in 8ms
+[01:33:01.270] Server  LOG     ✓ Compiled in 4ms
+[01:33:10.254] Server  LOG     ✓ Compiled in 13ms
+[01:33:20.947] Server  LOG     ✓ Compiled in 7ms
+[01:33:25.083] Server  LOG     ✓ Compiled in 5ms
+[01:33:53.196] Server  LOG     ✓ Compiled in 22ms
+[01:41:05.439] Server  LOG     ✓ Compiled in 2ms
+[01:41:13.949] Server  LOG     ✓ Compiled in 2ms
+[01:41:23.870] Server  LOG     ✓ Compiled in 7ms
+[01:41:29.112] Server  LOG     ✓ Compiled in 8ms
+[01:41:34.971] Server  LOG     ✓ Compiled in 8ms
+[01:41:37.494] Server  LOG     ✓ Compiled in 2ms
+[01:41:42.174] Server  LOG     ✓ Compiled in 3ms
+[01:41:44.258] Server  LOG     ✓ Compiled in 2ms
+[01:41:45.089] Server  LOG     ✓ Compiled in 2ms

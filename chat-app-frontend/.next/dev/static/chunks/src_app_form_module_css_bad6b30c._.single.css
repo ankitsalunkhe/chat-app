@@ -1,0 +1,102 @@
+/* [project]/src/app/form.module.css [app-client] (css) */
+.form-module__V6Rn0a__form {
+  flex-direction: column;
+  row-gap: 8px;
+  width: 100%;
+  display: flex;
+}
+
+.form-module__V6Rn0a__usernameContainer {
+  display: flex;
+  position: relative;
+}
+
+.form-module__V6Rn0a__username {
+  border-color: none;
+  border: 1px solid #f7f5f5;
+  border-radius: 10px;
+  width: 100%;
+  font-size: 18px;
+}
+
+.form-module__V6Rn0a__usernameLogo {
+  z-index: 10;
+  padding-left: 2%;
+  position: absolute;
+  top: 20%;
+}
+
+.form-module__V6Rn0a__username::placeholder {
+  opacity: .5;
+}
+
+.form-module__V6Rn0a__username[type="text"] {
+  padding: 12px 10%;
+}
+
+.form-module__V6Rn0a__errorContainer {
+  position: absolute;
+  top: 80%;
+}
+
+.form-module__V6Rn0a__errorMsg {
+  color: red;
+  font-size: small;
+}
+
+.form-module__V6Rn0a__passwordContainer {
+  margin-top: 15px;
+  display: flex;
+  position: relative;
+}
+
+.form-module__V6Rn0a__password {
+  border-color: none;
+  border: 1px solid #f7f5f5;
+  border-radius: 10px;
+  width: 100%;
+  font-size: 18px;
+}
+
+.form-module__V6Rn0a__passwordLogo {
+  z-index: 10;
+  padding-left: 2%;
+  position: absolute;
+  top: 20%;
+}
+
+.form-module__V6Rn0a__password[type="password"] {
+  padding: 12px 10%;
+}
+
+.form-module__V6Rn0a__password::placeholder {
+  opacity: .5;
+}
+
+.form-module__V6Rn0a__loginButton {
+  color: #fff;
+  cursor: pointer;
+  background-color: #000;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.form-module__V6Rn0a__loggingBtn {
+  color: gray;
+}
+
+.form-module__V6Rn0a__forgotPassCont {
+  margin-top: 10px;
+  margin-left: auto;
+  display: flex;
+}
+
+.form-module__V6Rn0a__forgotPassBtn {
+  cursor: pointer;
+  color: #2266ef;
+  background-color: #0000;
+  border: none;
+}
+
+/*# sourceMappingURL=src_app_form_module_css_bad6b30c._.single.css.map*/

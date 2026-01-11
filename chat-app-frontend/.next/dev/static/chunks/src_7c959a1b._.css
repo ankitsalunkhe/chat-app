@@ -1,0 +1,56 @@
+/* [project]/src/libs/navbar/styles.module.css [app-client] (css) */
+.styles-module__1y_U3q__logout {
+  cursor: pointer;
+  color: #fff;
+  background-color: #000;
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-size: larger;
+  box-shadow: 1px 2px 2px #000;
+}
+
+.styles-module__1y_U3q__logout:hover {
+  color: gray;
+}
+
+.styles-module__1y_U3q__navbar {
+  background-color: #469eeb;
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 5%;
+  display: flex;
+}
+
+.styles-module__1y_U3q__navbar:hover {
+  background-color: #2a95f2;
+}
+
+/* [project]/src/app/home/styles.module.css [app-client] (css) */
+.styles-module__EQWAxW__home {
+  grid-gap: 5px;
+  grid-template-areas: "header header header header"
+                       "sidebar main main main";
+  justify-items: center;
+  display: grid;
+}
+
+.styles-module__EQWAxW__header {
+  border-color: #00f;
+  border-radius: 25px;
+  grid-area: header;
+  width: 100%;
+}
+
+.styles-module__EQWAxW__sidebar {
+  background-color: #3b82ae;
+  grid-area: sidebar;
+  width: 100%;
+  height: 500px;
+}
+
+.styles-module__EQWAxW__main {
+  grid-area: main;
+}
+
+/*# sourceMappingURL=src_7c959a1b._.css.map*/

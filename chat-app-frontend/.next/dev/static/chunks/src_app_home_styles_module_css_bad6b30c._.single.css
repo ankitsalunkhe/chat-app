@@ -1,0 +1,28 @@
+/* [project]/src/app/home/styles.module.css [app-client] (css) */
+.styles-module__EQWAxW__home {
+  grid-gap: 5px;
+  grid-template-areas: "header header header header"
+                       "sidebar main main main";
+  justify-items: center;
+  display: grid;
+}
+
+.styles-module__EQWAxW__header {
+  border-color: #00f;
+  border-radius: 25px;
+  grid-area: header;
+  width: 100%;
+}
+
+.styles-module__EQWAxW__sidebar {
+  background-color: #3b82ae;
+  grid-area: sidebar;
+  width: 100%;
+  height: 500px;
+}
+
+.styles-module__EQWAxW__main {
+  grid-area: main;
+}
+
+/*# sourceMappingURL=src_app_home_styles_module_css_bad6b30c._.single.css.map*/
