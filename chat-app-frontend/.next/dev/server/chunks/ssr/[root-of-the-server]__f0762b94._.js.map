@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///Users/ankitsanjaysalunkhe/work/pratice-fullstack/chat-app/src/app/logout/page.tsx"],"sourcesContent":["export const Logout = async () => {\n  const response = await fetch(\"http://localhost:1323/v1/auth/logout\", {\n    method: \"POST\",\n  });\n\n  if (response.ok) {\n    return <p>Logged out successfully</p>;\n  }\n\n  return <p>Something went wrong logging out</p>;\n};\n\nexport default Logout;\n"],"names":[],"mappings":";;;;;;;;AAAO,MAAM,SAAS;IACpB,MAAM,WAAW,MAAM,MAAM,wCAAwC;QACnE,QAAQ;IACV;IAEA,IAAI,SAAS,EAAE,EAAE;QACf,qBAAO,mcAAC;sBAAE;;;;;;IACZ;IAEA,qBAAO,mcAAC;kBAAE;;;;;;AACZ;uCAEe"}}]
-}

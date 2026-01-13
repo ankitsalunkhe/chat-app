@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/app/home/styles.module.css"],"sourcesContent":[".home {\n  display: grid;\n  grid-gap: 5px;\n  grid-template-areas:\n    \"header header header header\"\n    \"sidebar main main main\";\n\n  justify-items: center;\n}\n\n.header {\n  border-color: blue;\n  border-radius: 25px;\n  grid-area: header;\n  width: 100%;\n}\n\n.sidebar {\n  grid-area: sidebar;\n  height: 500px;\n  width: 100%;\n  background-color: rgb(59, 130, 174);\n}\n\n.main {\n  grid-area: main;\n}\n"],"names":[],"mappings":"AAAA;;;;;;;;AAUA;;;;;;;AAOA;;;;;;;AAOA"}}]
-}

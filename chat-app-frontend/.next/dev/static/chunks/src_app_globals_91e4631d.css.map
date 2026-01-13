@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///Users/ankitsanjaysalunkhe/work/pratice-frontend/my-chat/src/app/globals.css"],"sourcesContent":[".body {\n  padding: 10px;\n\n  display: grid;\n  grid-gap: 5px;\n  grid-template-rows: 50px 200px 50px;\n  grid-template-areas:\n    \"header\"\n    \"content\"\n    \"footer\";\n\n  justify-items: center;\n}\n\n.header {\n  grid-area: header;\n  background-color: grey;\n}\n\n.content {\n  grid-area: content;\n}\n\n.footer {\n  grid-area: footer;\n}\n"],"names":[],"mappings":"AAAA;;;;;;;;;;;AAcA;;;;;AAKA;;;;AAIA"}}]
-}

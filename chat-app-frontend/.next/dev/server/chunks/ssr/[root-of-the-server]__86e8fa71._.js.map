@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///Users/ankitsanjaysalunkhe/work/pratice-fullstack/chat-app/src/app/home/page.tsx"],"sourcesContent":["import { headers } from \"next/headers\";\n\nexport const Home = async () => {\n  const h = await headers();\n  const userId = h.get(\"x-user-id\");\n\n  return <p>Id: {userId ?? \"unknown\"}</p>;\n};\n\nexport default Home;\n"],"names":[],"mappings":";;;;;;;AAAA;;;AAEO,MAAM,OAAO;IAClB,MAAM,IAAI,MAAM,IAAA,+VAAO;IACvB,MAAM,SAAS,EAAE,GAAG,CAAC;IAErB,qBAAO,mcAAC;;YAAE;YAAK,UAAU;;;;;;;AAC3B;uCAEe"}}]
-}

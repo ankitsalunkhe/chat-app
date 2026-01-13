@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 46, "column": 0}, "map": {"version":3,"sources":["file:///Users/ankitsanjaysalunkhe/work/pratice-fullstack/chat-app/src/app/api/login/route.tsx"],"sourcesContent":["import { cookies } from \"next/headers\";\n\nexport async function POST(request: Request) {\n  const cookieStore = await cookies();\n  const formData = await request.formData();\n\n  formData.append(\"grant_type\", \"password\");\n\n  const response = await fetch(\"http://localhost:1323/v1/auth/login\", {\n    method: \"POST\",\n    body: formData,\n  });\n\n  return response\n}\n"],"names":[],"mappings":";;;;AAAA;;AAEO,eAAe,KAAK,OAAgB;IACzC,MAAM,cAAc,MAAM,IAAA,iWAAO;IACjC,MAAM,WAAW,MAAM,QAAQ,QAAQ;IAEvC,SAAS,MAAM,CAAC,cAAc;IAE9B,MAAM,WAAW,MAAM,MAAM,uCAAuC;QAClE,QAAQ;QACR,MAAM;IACR;IAEA,OAAO;AACT"}}]
-}
