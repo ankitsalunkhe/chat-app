@@ -1,0 +1,8 @@
+# Next.js
+.next
+
+# Nx
+.nx
+
+# dependencies
+node_modules
