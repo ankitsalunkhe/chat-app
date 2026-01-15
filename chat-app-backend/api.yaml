@@ -114,7 +114,15 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/logoutResponse' 
-      
+  
+  /v1/api/chat:
+    get:
+      summary: Chat
+      operationId: getChat
+      responses:
+        '500':
+          description: Error
+
 components:
   securitySchemes:
     cookieAuth:

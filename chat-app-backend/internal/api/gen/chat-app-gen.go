@@ -91,6 +91,9 @@ type ServerInterface interface {
 	// Health
 	// (GET /health)
 	GetHealth(ctx echo.Context) error
+	// Chat
+	// (GET /v1/api/chat)
+	GetChat(ctx echo.Context) error
 	// Login
 	// (POST /v1/auth/login)
 	PostLogin(ctx echo.Context) error
@@ -116,6 +119,15 @@ func (w *ServerInterfaceWrapper) GetHealth(ctx echo.Context) error {
 
 	// Invoke the callback with all the unmarshaled arguments
 	err = w.Handler.GetHealth(ctx)
+	return err
+}
+
+// GetChat converts echo context to params.
+func (w *ServerInterfaceWrapper) GetChat(ctx echo.Context) error {
+	var err error
+
+	// Invoke the callback with all the unmarshaled arguments
+	err = w.Handler.GetChat(ctx)
 	return err
 }
 
@@ -188,6 +200,7 @@ func RegisterHandlersWithBaseURL(router EchoRouter, si ServerInterface, baseURL 
 	}
 
 	router.GET(baseURL+"/health", wrapper.GetHealth)
+	router.GET(baseURL+"/v1/api/chat", wrapper.GetChat)
 	router.POST(baseURL+"/v1/auth/login", wrapper.PostLogin)
 	router.POST(baseURL+"/v1/auth/logout", wrapper.PostLogout)
 	router.POST(baseURL+"/v1/auth/register", wrapper.PostRegister)

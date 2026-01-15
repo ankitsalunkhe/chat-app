@@ -8,4 +8,4 @@ runB:
 
 !PHONY: runF
 runF:
-	cd chat-app && pnpm dev
+	cd chat-app-frontend && pnpm dev
