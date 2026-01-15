@@ -18,7 +18,7 @@ var (
 
 func (h Handlers) GetChat(e echo.Context) error {
 	userId, _ := h.auth.VerifySession(e)
-	fmt.Println("temp", userId)
+	fmt.Println("Hi", userId)
 
 	ws, err := upgrader.Upgrade(e.Response(), e.Request(), nil)
 	if err != nil {
@@ -31,6 +31,6 @@ func (h Handlers) GetChat(e echo.Context) error {
 		if err != nil {
 			e.Logger().Error(err)
 		}
-		fmt.Printf("%s\n", msg)
+		fmt.Printf("Recieved in backend :%s\n", msg)
 	}
 }

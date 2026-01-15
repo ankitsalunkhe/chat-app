@@ -1,14 +1,15 @@
-import { Button, Link } from "@mui/material";
+import { Button } from "@mui/material";
 import styles from "./styles.module.css";
-import { Logout } from "@mui/icons-material";
+import { Home, Logout } from "@mui/icons-material";
 
 export const NavBar = () => {
   return (
     <nav className={styles.navbar}>
-      {/* <a href="/">Home</a> */}
-      <Link href="/" underline="none">
-        Home
-      </Link>
+      <Button
+        size="large"
+        endIcon={<Home />}
+        href="/"
+      ></Button>
       <Button
         variant="contained"
         size="small"
