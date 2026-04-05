@@ -9,3 +9,11 @@ runB:
 !PHONY: runF
 runF:
 	cd chat-app-frontend && pnpm dev
+
+!PHONY: infra
+infra:
+	cd chat-app-backend && docker compose up -d
+
+!PHONY: teardown
+teardown:
+	cd chat-app-backend && docker compose down -v

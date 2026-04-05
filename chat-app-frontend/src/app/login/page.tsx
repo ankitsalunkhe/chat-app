@@ -1,6 +1,6 @@
 import { Form } from "./form";
+import { GoogleLogin } from "./googleLogin";
 import styles from "./login.module.css";
-import Image from "next/image";
 
 const LoginPage = () => {
   return (
@@ -10,13 +10,7 @@ const LoginPage = () => {
         <Form />
         <div className={styles.externalLogin}>
           <p className={styles.externalSignTitle}>Or sign in with</p>
-          <Image
-            src="/icons/google-login.png"
-            className={styles.googleLogin}
-            alt="Google Login"
-            width={30}
-            height={30}
-          />
+          <GoogleLogin />
         </div>
       </div>
     </div>

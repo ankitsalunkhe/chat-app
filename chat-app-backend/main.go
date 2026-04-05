@@ -5,6 +5,7 @@ import (
 	"github.com/ankitsalunkhe/chat-app-backend/internal/api/gen"
 	"github.com/ankitsalunkhe/chat-app-backend/internal/auth"
 	"github.com/ankitsalunkhe/chat-app-backend/internal/config"
+	"github.com/ankitsalunkhe/chat-app-backend/internal/google"
 	"github.com/ankitsalunkhe/chat-app-backend/internal/storage"
 	"github.com/labstack/echo/v4"
 )
@@ -28,5 +29,8 @@ func main() {
 
 	gen.RegisterHandlers(e, handlers)
 
+	google := google.New(auth, db)
+	e.GET("/googleLogin", google.LoginHandler)
+	e.GET("/callback", google.Callback)
 	e.Logger.Fatal(e.Start(":1323"))
 }

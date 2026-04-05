@@ -1,19 +1,22 @@
 module github.com/ankitsalunkhe/chat-app-backend
 
-go 1.24.2
+go 1.25.0
 
 require (
 	github.com/boj/redistore v1.4.1
 	github.com/go-playground/validator/v10 v10.14.1
 	github.com/golang-migrate/migrate/v4 v4.19.1
+	github.com/gorilla/websocket v1.5.3
 	github.com/joho/godotenv v1.5.1
 	github.com/kelseyhightower/envconfig v1.4.0
 	github.com/labstack/echo/v4 v4.15.0
 	github.com/lib/pq v1.10.9
 	golang.org/x/crypto v0.46.0
+	golang.org/x/oauth2 v0.36.0
 )
 
 require (
+	cloud.google.com/go/compute/metadata v0.8.0 // indirect
 	github.com/dprotaso/go-yit v0.0.0-20220510233725-9ba8df137936 // indirect
 	github.com/gabriel-vasile/mimetype v1.4.2 // indirect
 	github.com/getkin/kin-openapi v0.133.0 // indirect
@@ -25,7 +28,6 @@ require (
 	github.com/gomodule/redigo v1.9.2 // indirect
 	github.com/gorilla/securecookie v1.1.2 // indirect
 	github.com/gorilla/sessions v1.4.0 // indirect
-	github.com/gorilla/websocket v1.5.3 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
 	github.com/labstack/gommon v0.4.2 // indirect
 	github.com/leodido/go-urn v1.2.4 // indirect
