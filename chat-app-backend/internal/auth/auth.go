@@ -26,7 +26,6 @@ var (
 const (
 	// cookieMaxAge is the maximum age of the session cookie.
 	cookieMaxAge = 60 * 60 // 1 hour
-	redisMaxAge  = 60 * 60 //  1 hour
 )
 
 func New(sessionKey string) Auth {

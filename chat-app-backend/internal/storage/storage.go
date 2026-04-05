@@ -87,3 +87,40 @@ func (db *Database) CreateCredentials(username string, password string) error {
 
 	return nil
 }
+
+func (db *Database) CreateGoogleCredential(username string) error {
+	tx, err := db.db.Begin()
+	if err != nil {
+		return fmt.Errorf("starting transaction: %w", err)
+	}
+	defer tx.Rollback()
+
+	result, err := tx.Exec("INSERT INTO chat_app.credentials (username, is_google_signup) VALUES ($1, $2)", username, true)
+	if err != nil {
+		err, ok := err.(*pq.Error)
+		if !ok {
+			return fmt.Errorf("executing transaction: %w", err)
+		}
+
+		if err.Code.Name() == "unique_violation" {
+			return ErrDuplicateUsername
+		}
+
+		return fmt.Errorf("executing transaction: %w", err)
+	}
+
+	if err := tx.Commit(); err != nil {
+		return fmt.Errorf("committing transaction: %w", err)
+	}
+
+	id, err := result.RowsAffected()
+	if err != nil {
+		return fmt.Errorf("fetching rows affected: %w", err)
+	}
+
+	if id == 0 {
+		return fmt.Errorf("no rows added")
+	}
+
+	return nil
+}

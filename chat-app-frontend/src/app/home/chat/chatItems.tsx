@@ -4,6 +4,7 @@ type ChatItemsProps = {
   messages: string[]
 }
 export const ChatItems = ({messages}: ChatItemsProps) => {
+  
   return (
     <Stack
       direction="column-reverse"
