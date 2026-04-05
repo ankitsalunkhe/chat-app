@@ -9,8 +9,10 @@ import (
 )
 
 type Config struct {
-	DatabaseURL string `envconfig:"DATABASE_URL"`
-	SessionKey  string `envconfig:"SESSION_KEY"`
+	DatabaseURL        string `envconfig:"DATABASE_URL"`
+	SessionKey         string `envconfig:"SESSION_KEY"`
+	GoogleClientID     string `envconfig:"GOOGLE_CLIENT_ID"`
+	GoogleClientSecret string `envconfig:"GOOGLE_CLIENT_SECRET"`
 }
 
 func New() (Config, error) {

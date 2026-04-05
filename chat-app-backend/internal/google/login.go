@@ -25,12 +25,12 @@ type Google struct {
 	db     storage.Database
 }
 
-func New(auth auth.Auth, db storage.Database) *Google {
+func New(auth auth.Auth, db storage.Database, clientID string, clientSecret string) *Google {
 	return &Google{
 		config: &oauth2.Config{
 			RedirectURL:  "http://localhost:1323/callback",
-			ClientID:     "57789757605-gtdtc71c4nputu8g6rqm7tu7ut287s22.apps.googleusercontent.com",
-			ClientSecret: "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",
+			ClientID:     clientID,
+			ClientSecret: clientSecret,
 			Scopes: []string{
 				"https://www.googleapis.com/auth/userinfo.email",
 			},

@@ -29,7 +29,7 @@ func main() {
 
 	gen.RegisterHandlers(e, handlers)
 
-	google := google.New(auth, db)
+	google := google.New(auth, db, cfg.GoogleClientID, cfg.GoogleClientSecret)
 	e.GET("/googleLogin", google.LoginHandler)
 	e.GET("/callback", google.Callback)
 	e.Logger.Fatal(e.Start(":1323"))
